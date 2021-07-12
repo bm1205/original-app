@@ -2,6 +2,9 @@ h1, h2 {
   font-weight: 100;
 }
 
+.text-white {
+ color: #000000; 
+}
 
 .btn-white {
   color: #000000;
@@ -18,7 +21,7 @@ h1, h2 {
 
 .top-hero-wrapper {
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-image: image-url('margaret-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -36,5 +39,28 @@ h1, h2 {
   
   h2 {
     margin-bottom: 60px;
+  }
+}
+
+.form-control {
+  height: 45px;
+}
+
+.users-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('margaret-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  
+  .users-new-container {
+    padding-top: 220px;
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
   }
 }
