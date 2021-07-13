@@ -6,13 +6,19 @@ class UsersController < ApplicationController
   def edit
     @user = User.new
   end
-  
+
   def create
-    @user = User.new(name: params[:user][:name], email: params[:user][:email])
+    @user = User.new(user_params)
     if @user.save
-      redirect_to edit_user_path
+      redirect_to users_edit_path, success: '登録が完了しました'
     else
+      flash.now[:danger] = "登録に失敗しました"
       render :new
     end
+  end
+  
+  private
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 end
