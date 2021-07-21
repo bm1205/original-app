@@ -13,24 +13,16 @@
            <%= f.text_field :email, class: 'form-control' %>
          </div>
          <div class="form-group">
-           <%= f.label :password, class: 'text-white' %>
-           <%= f.password_field :password, class: 'form-control' %>
-         </div>
-         <div class="form-group">
-           <%= f.label :password_confirmation, class: 'text-white' %>
-           <%= f.password_field :password_confirmation, class: 'form-control' %>
-         </div>
-         <div class="form-group">
            <%= f.label :gender, class: 'text-white' %>
            <%= f.radio_button :gender, "男" %>男 <%= f.radio_button :gender, "女" %>女  
          </div>
          <div class="form-group">
-           <%= f.label :residence, class: 'text-white' %>
-           <%= f.text_field :residence, class: 'form-control' %>
-         </div>
-         <div class="form-group">
            <%= f.label :age, class: 'text-white' %>
            <%= f.number_field :age, min: 18, class: 'form-control' %>
+         </div>
+         <div class="form-group">
+           <%= f.label :residence, class: 'text-white' %>
+           <%= f.text_field :residence, class: 'form-control' %>
          </div>
          <div class="form-group">
            <%= f.label :hobby, class: 'text-white' %>
@@ -40,6 +32,15 @@
            <%= f.label :introduction, class: 'text-white' %>
            <%= f.text_area :introduction, class: 'form-control' %>
          </div>
+         <div class="form-group">
+           <%= f.label :password, class: 'text-white' %>
+           <%= f.password_field :password, class: 'form-control' %>
+         </div>
+         <div class="form-group">
+           <%= f.label :password_confirmation, class: 'text-white' %>
+           <%= f.password_field :password_confirmation, class: 'form-control' %>
+         </div>
+         
          
          <%= f.submit "登録", class: 'btn-block btn-white' %>
         <% end %>
