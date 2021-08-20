@@ -1,0 +1,36 @@
+<div class="users-search-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 user-search-container">
+        <h1 class="text-center text-search">ユーザー検索</h1>
+          <%= form_with url: search_users_path, method: :get, local: true do |f| %>
+          <div class="form-group">
+           <%= f.label :gender, class: 'text-white' %>
+           <%= f.radio_button :gender, "男" %>男 <%= f.radio_button :gender, "女" %>女  
+          </div>
+          <div class="form-group">
+            <%= f.label :residence, class: 'text-white' %>
+            <%= f.text_field :residence %>
+          </div>
+          <div class="form-group">
+           <%= f.select :hobby_id, [ ["アウトドア",1], ["ドライブ", 2], ["アニメ・マンガ", 3 ] ,["映画", 4], ["ゲーム", 5], ["旅行", 6] ], prompt: "選択してください", class: "hoge" %>
+          </div>
+          
+          
+            <%= f.submit "検索", class: 'btn-block btn-white' %>
+          <% end %>
+          
+          
+        <h2 class="text-center text-search">検索結果</h2>
+        
+        <% @users.each do |user| %>
+        <tr>
+          <td><%= link_to user.name, '#', class: 'btn btn-block btn-search' %></td>
+        </tr>
+        <% end %>
+        
+      </div>
+    </div>
+  </div>
+</div>
+

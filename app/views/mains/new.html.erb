@@ -2,12 +2,17 @@
   <div class="container top-hero-container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 col-md-offset-4">
-        <%= link_to 'ユーザー検索', '#', class: 'btn btn-block btn-black' %>
+        <%= link_to 'ユーザー検索', search_users_path, class: 'btn btn-block btn-black' %>
       </div>
     </div>
     <div class="row">
       <div class="col-md-offset-4 col-md-4 col-md-offset-4">
-        <%= link_to '掲示板', '#', class: 'btn btn-block btn-black' %>
+        <%= link_to '掲示板投稿', new_topic_path, class: 'btn btn-block btn-black' %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 col-md-offset-4">
+        <%= link_to '掲示板一覧', topics_index_path, class: 'btn btn-block btn-black' %>
       </div>
     </div>
     <div class="row">

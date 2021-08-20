@@ -1,0 +1,16 @@
+<div class="users-search-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 user-search-container">
+        <h2 class="text-center text-search">検索結果</h2>
+        
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= link_to user.name, '#', class: 'btn btn-block btn-search' %></td>
+          </tr>
+        <% end %>
+        <%=link_to"ユーザー検索ページへ", search_users_path, class: 'btn btn-block btn-search' %>
+      </div>
+    </div>
+  </div>
+</div>

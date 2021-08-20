@@ -97,6 +97,35 @@ h1, h2 {
   }
 }
 
+.users-search-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('margaret-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  
+  .users-search-container {
+    padding-top: 20px;
+    
+    .text-search {
+      padding-top: 20px;
+    }
+  }
+}
+
+.btn-search {
+  color: #000000;
+  border: 3px solid #000000;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  background-color: white;
+}
+
 .navbar-transparent {margin-bottom: 0px;
 background-color: rgba(0,0,0,0.5);
 a {color: #fff !important;
@@ -129,6 +158,73 @@ img {height: 40px;
   font-size: 30px;
   background-color: white;
 }
+
+//.btn-black {
+  //color: #565656;
+  //border: 1px solid #565656;
+  //padding-top: 15px;
+  //padding-bottom: 15px;
+ //font-size: 20px;
+  //background-color: rgba(0,0,0,0.0);
+
+  //&:hover {
+    //color: #565656;
+  //}
+//}
+
+.topic-new-wrapper {
+  padding-top: 120px;
+}
+
+.topic-index-wrapper {
+  padding-top: 70px;
+  background-color: #fafafa;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+    .topic-author {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .topic-index-icon {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.favorite-btn {
+  width: 25px;
+  height: 30px;
+  font-size: 45px;
+  color: #808080;
+  margin-left: 20px;
+}
+.unfavorite-btn {
+  width: 25px;
+  height: 30px;
+  font-size: 45px;
+  color: #e54747;
+  margin-left: 20px;
+}
+
 
 .rooms{
   margin-top: 300px; 

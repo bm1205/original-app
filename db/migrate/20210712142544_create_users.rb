@@ -9,6 +9,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :introduction
       t.string :image
       t.integer :age
+      t.integer :hobby_id
       
       t.timestamps
     end
